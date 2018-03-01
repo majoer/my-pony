@@ -1,0 +1,41 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  animation-name: fade-in;
+  animation-duration: 1000ms;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 35px;
+  font-style: italic;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.my-pony__rainbow {
+  height: 50%;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.my-pony__image {
+  position: absolute;
+  left: 100%;
+}
