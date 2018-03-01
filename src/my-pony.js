@@ -13,8 +13,16 @@ function addPony() {
     {left: '-50%'},
     {left: '100%'}
   ], 5000 + Math.random() * 20000)
+
+  setTimeout(addPony, 1000);
 }
 
-for (let i = 0; i < 100; i++) {
-  addPony();
-}
+div.animate([
+  {transform: 'translateY(0px)'},
+  {transform: 'translateY(3px)'}
+], {
+  duration: 200,
+  iterations: Infinity
+});
+
+addPony();
